@@ -1,2 +1,2 @@
 # Veebilehe-projekt
-STürT rühma veebileht. Rühma liikmed on Maksim Kelus ja Juhan Puusepp.
+STürT rühma veebileht. Rühma liikmed on Maksim Kelus, Juhan Puusepp ja Mattias Daum.
