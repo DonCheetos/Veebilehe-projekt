@@ -1,1 +1,57 @@
-commit 123
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    
+<div class="row">
+  <div class="column" style="background-color:lightblue;">
+    <h1>Jalgpall</h1>
+    <p>See leht on pÃ¼hendatud jalgpallile, maailma populaarseimale spordialale. Siit leiate teavet jalgpalli ajaloo, reeglite ja kuulsate mÃ¤ngijate kohta.</p>
+    
+    <a href="https://www.fifa.com/" target="_blank">KlÃµpsake siin, et saada rohkem teavet FIFA ametlikult veebisaidilt.</a>
+    
+    <br><br>
+    
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Football_Pallo_valmiina-cropped.jpg" alt="Jalgpalli pilt">
+  </div>
+  <div class="column" style="background-color:lightblue;">
+    <h2>Jalgpalli elementaarsed reeglid</h2>
+    <ul>
+        <li>MÃ¤ng kestab 90 minutit</li>
+        <li>Meeskonnas on 11 mÃ¤ngijat, sealhulgas vÃ¤ravavaht</li>
+        <li>
+            Rikkumised:
+            <ul>
+                <li>Otsene vabasÃ¶Ã¶k</li>
+                <li>NurgalÃ¶Ã¶k</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <table>
+        <tr>
+            <th>MÃ¤ngija nimi</th>
+            <th>Meeskond</th>
+            <th>VÃ¤ravad</th>
+        </tr>
+        <tr>
+            <td>Cristiano Ronaldo</td>
+            <td>Al-Nassr</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>Lionel Messi</td>
+            <td>Paris Saint-Germain</td>
+            <td>20</td>
+        </tr>
+    </table>
+    
+    <a href="page2.html">KlÃµpsake siin, et avada teine leht</a>
+  </div>
+</div>
+
+</body>
+</html>
