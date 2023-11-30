@@ -1,57 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Cars Showcase</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-<div class="row">
-  <div class="column" style="background-color:lightblue;">
-    <h1>Jalgpall</h1>
-    <p>See leht on pÃ¼hendatud jalgpallile, maailma populaarseimale spordialale. Siit leiate teavet jalgpalli ajaloo, reeglite ja kuulsate mÃ¤ngijate kohta.</p>
-    
-    <a href="https://www.fifa.com/" target="_blank">KlÃµpsake siin, et saada rohkem teavet FIFA ametlikult veebisaidilt.</a>
-    
-    <br><br>
-    
-    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Football_Pallo_valmiina-cropped.jpg" alt="Jalgpalli pilt">
-  </div>
-  <div class="column" style="background-color:lightblue;">
-    <h2>Jalgpalli elementaarsed reeglid</h2>
-    <ul>
-        <li>MÃ¤ng kestab 90 minutit</li>
-        <li>Meeskonnas on 11 mÃ¤ngijat, sealhulgas vÃ¤ravavaht</li>
-        <li>
-            Rikkumised:
+    <header class="main-header">
+        <h1>Retro Wheels</h1>
+        <nav class="main-nav">
             <ul>
-                <li>Otsene vabasÃ¶Ã¶k</li>
-                <li>NurgalÃ¶Ã¶k</li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#featured">Featured Cars</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </li>
-    </ul>
+        </nav>
+    </header>
     
-    <table>
-        <tr>
-            <th>MÃ¤ngija nimi</th>
-            <th>Meeskond</th>
-            <th>VÃ¤ravad</th>
-        </tr>
-        <tr>
-            <td>Cristiano Ronaldo</td>
-            <td>Al-Nassr</td>
-            <td>15</td>
-        </tr>
-        <tr>
-            <td>Lionel Messi</td>
-            <td>Paris Saint-Germain</td>
-            <td>20</td>
-        </tr>
-    </table>
+    <section id="history" class="history-section">
+        <h2>The Golden Era of Automobiles</h2>
+        <p>Delve into the rich history of classic cars and how they shaped the modern world.</p>
+        <!-- Content for history goes here -->
+    </section>
     
-    <a href="page2.html">KlÃµpsake siin, et avada teine leht</a>
-  </div>
-</div>
-
+    <section id="featured" class="featured-section">
+        <h2>Featured Models</h2>
+        <!-- Dynamic grid of featured retro cars -->
+        <div class="car-card" tabindex="0">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUTExMWFhUXGRgbFxgYGR4bGhgdHRcWFxgaGhgaHSgiGxsnHRoYITEhJSkrLi4uGB8zODMsNygtLisBCgoKDg0OGxAQGisjHyUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAEAAIDBQYBB//EAEQQAAEDAgMFBQYDBQcDBQEAAAECAxEAIQQSMQVBUWFxBoGRofATIjKxwdFCUuEHM2JykhQWI0OCovEVNLJTk8LS4nP/xAAaAQACAwEBAAAAAAAAAAAAAAACAwABBAUG/8QAMREAAgECBQIFAgYCAwAAAAAAAAECAxEEEiExQRNRBRQyYZEigRUzcbHh8NHxQlKh/9oADAMBAAIRAxEAPwD2elXYpRWaw25ylXYpRUsS5ylTopRVkuNpU6K5FVYlzlKuxXYq7EuNpU6K5FQlzlKnRSipYlxtKnRSipYlxtKnRSipYg2lTopRUsQbXa7FKKlijlcp0UqliHKVdilFQg2lToqB7Fto+JxCd11AfM1TaRZNFcqtd7Q4VOr6O6/yFVWJ7c4dM5UrVziPnuoHUguQlCT2Rp6VYd39oX5WB3r+yab/AH9WU2YTnOhzHL4RfxoXWh3D6M+xuqRMa15DtHtDinlXcUOCUSkdyU3PU1VvYlUkuOEEzInMo9b/ADNLeIXCGLDSfJ7S5tFlPxOtjqtI+ZodO3cMVZQ+1I/iG7W+leIO4kfhnxv1MCnIxEaJHUmq60uxPLrue04jtJhECS+g8knMfBM1Ur7fYUH4XTzyj6qry0OnU03P3ULqzYSoR5Z7cxtcH4k+FGt4pJ0NZtujmTXFp+KYiOkrMOrh4LYvAoV2gGTRbaq62Gx3V3VjHKFiWK5FdBpE10rq1wDlKoXTQbqq5lfxJUnbLcONO5ZxSiqcY5ad8jnT07WG8EVdPxWhNcoN4efBaxSqoVtlI41Grbg3Dzpv4hR7kWGqPguqVZ9ztArcE+u+hH+0Dm5QHQD9ajx9Li/wGsJUNZSrEvdoHj+KOgAmgn9tYg29oe4/Wq89DhMJYOfLR6HUb+IQgStQSOZivORt3EJkhxXO8+RoHE49SzKiVKPOT+lU8bppEJYN31ZvMV2qw6DAUpX8oMeP2qI9sMPwX/T+tefqc5VGHFaAUvzVT2G+Uh7m5xHbdA+FpR5kgfKaFHbdZmGU8veOnTfWOIOp+f3pntD08Pvaq8xUfJflqa4NO/21xJJCUtoHGNP6qCX2txU/vR3JEW6iqIr4xbdM/Kmu4xCBJFC6s+4Sow7Gg/vNiz/neCR9qjd7QYs2L5jkUg8N16zoxylT7oHL6zUL2KAsTQ559y+lT7Fy/tR1RJU4tRNpk6et1CFtRvYd/wB6pX8buuOFcaxatSogevCr1auVZcFq6uDE9w+5qNSs2pPdH/2mgVNKUQoKUB37qep1ZtKj1mT1NGloRosE4tCR7uo7z56edRHG7wkE8VnN/tEAedAFR46cf1pLQvne4kcarIuS3JkmIxa1CM56Cw8BahFNmNxpwcUSAAFH1Onq9Ru4gjUC3LvpijbYBvuMQ7FjSU/Ty62oQURukc+N71AvDoSLOTvgA/ejygZhxcv086YcUfRqPJmvJg2FvOx0p+Hw6APeCieIMUVkirs9qbe6eFFsudKqG1nfRTK68hOpI21KRcNvUW07VO2uim3KqliqkGYqlItQ5SLlAB2ul2uj+JysI6RO65Qriqjccoda6w1MQ5u4+FI66OXnQriY3eddWTUDiDVRlbg1wjYYtwVEsII1PSuLQaGcTB186fCUuTQoruRuuRZNCOvmYoz2JN/qKGewK9cpNaoxkU3HuQId+VdDwFJ3BuA/Aq/ATULmHWBJsNNDT4wa4FvL3JHFz8OvzoB54yRlv30/EOJBsDyIMdxF/GhFrM3VJnSdPvTmvcDKPVjOCZ7jTA8TqPL71O2IupSVHnrppaR9qh9tvUoEbkm/hAAjpV5blWA3sVH4CddJ0+lcwm0kKIBT8z9aOUdT8PJIJP8AUTXUoQqCqZ36z11q7KxVgDF4oidBwgX8RVOXTO/71aY/DCTlB5Wm3jwqndaIm2nz4daunYLK7EjmLO6xFRKfUY3+uND+0BufCmKXw0p6ghTYVmv+v609GKKdOFxy6VWrdjvpIfPCftRZAc9i7a2grS0bhaOPDjRKcepRyiAo8DHdOkVnm3+VTe0JHrjQuimRSZoWnilIJbSYMgiCdLdDSUlSnM6x7p0Ezpfd3VUM7SLf4jppPSK6nbjmtzf6ifKh6L3sEpLksFMhQMHKTIsRHmLVHhmC4IykBOiRe0kybzc76rcVtRS/hJAuL+AiKWG2mUnMq8wJIsIFvpRunKwN1cu3WivLlGVOaCkJCSeJHgdalOATnnJpYkybDlNzVC/tYmMsiPrI+tRp2qscTJufXWg6M7aBXhcucVgfeyBOUH4cogADifKq53YuIzGMsTaVR9agRtFeuaBBmTruNjvv5VIjbxH4uuv0o1GpFWWoMlB7s9dwiRoZmiEpExmvQeEZIEqnpw76NzRuJrzlo5TbN67kzSRuUDRiEUEhy9TPuwNaF04JXsZppthGcca4XRVJiNqpCglsF1X4ylSQhHIuEwVfwiSN8UUFPOAeyZTukqdkJBOsJTffad1TyVVtRtqxdluGLWOJp7WEWb6Dnby1oxhoI0AJ41HiHzxrp4fwdLWq/sv8iXWe0QXFoaaSVOORHAfU1ROdp8IZCAXP5SVeSYNV+3V+3xrbJuhpBcUDcFRISiRyme6jTbu3V16Xh2HSvlX7/uIniJxdrjB2lbn9wvvaX/8AKrHAdqGyYShsHhlAP/PfVcpfIUNiE5xdI6xWlYaEfSrfAHXb31NLie2LbdimDGgST5gRSd7VrGjRvG9AEHRU5vh56DfWLxCStJQfjTdJ/MPVj3GqtvEg7tPLjR0lmum9USpaNmloz0JXaxzSGh/M5pzsk0mu1izqWx/Uf/iPGsKh+1TIXzp2RCc7NsrtBm+INEc2yfnUan2F6sMniQ2UnxBrLYdZVafGrFj3d9DKEeS1OXAc/sTDOGQjIeS1Ef0qSfmKz+2uz7rXvJCVJge+Nw5jUdavW3jRjGLI0NZ54SnLZWY+GLqw917mIweEGUyok+XnUaUQqDzkjx9RWu2jsZt4EoPs1nh8KuoGh5isTtFh1klDqSDu4Ecjoa5dbC1IPXY6uHxNOrto+wn8aE3BM6frVVisUdTxmxI7poV50k7724XofEKvpPy56X1o6dGwc6nYHGUTv0vwpkAHwpBJJNvCjUtW969/XMaVo2M61K59u531KzhzFtf+aKxGFmee/hvBqJK8tjV30Ky6jfYRrA/50rjlpPDSpFvb/XX1woYvX3VaTKdkMUqNRXEKIFjzpr7lh18qHDlMSFN2YYHIjQ/Smm9ju3Chg5xNdCtTv+VXYmYlC461I294/pQuYHTv9etKchY8NKlilIPU+LTBI1O7Tl6tUYQFEkJTBNpMfWgw5UvtBwFDlsXmvue2bN2ulwdwPzFWSHwd9UOD2eUgAIHQGi1YNZjLKSNbAzXnpYJt6I6EpU+5ZlYzaj68aGXtZCVKQtrOLQcxG7pehhs1esmeNu88aGdZykpO6pGhOg86BtCely0TtPC78NHeD86sGO0LAkpTkmJlPAQPhJ3Vli3TFmnrH1E+PgF4SDNoraiSJEKHFJ+m6oEYsKmsnhnFJVI1+Y4VoHElKQtLSlmAcogG/UiY4VvoYp1uDNUoKmYodpsNh8Zi14hSgVqSlEIUr3UAgn3R0q0Y7V4B34cS2Cdy5R/5gVeubKbfku4aNLqiVf0mR31V4rsPglf5IB5QD4xNdCFVJGKdG7bJXilKQsqGU6KFweh0ri3gR7pB8vDd51VJ7Cstklla0TqJJSeqSYnnQ2K2C82CoO2GsG8dIpNWrUcvptYfQo01H6r3B9r48NvJIUJQPeTN4MySPVr7hUG22sqg6n4FxPXUHv8AvWU2vhcWrELW22paDABVkUqAkC5EHjWr7OtOLw62cQhaY0zAix4TrBvRyqpWqJq63sBGk9abTtxcgQ5zoltY41TZcQ2othpSoMCG1K8CBpVvhtj7ScjLh1AHeciB4KVPlWzOu5kyMNYdIgirFnFngfD9aCY7IY5X715tscsyz4AIE95q5wnYxgfvX3lnlCR55j51d0wbNELeJPGBR7WJQAJdR4/rR2G2BgEf5JV/MtR8pirXDjCo+HDtD/QJ8aF+xaKJvHtWhxJPI0YpKHklC05hf8Mxx1HkbVeox6AIT7o4CI8xWC/a87ilMNFnOpsLlfskkrnKYUvIfh3aG/Cp7E9yp232fQlZKXWwiSZJ03xlEkGqtey0qOVK0knfmHD/AIrGsbcUD+8KuKVk+HoVOvbREEoQRzgyd/wZTHKKzywqezsbI4ySVmrm3GxAQn3bgAGLgxFucwK6rZKU+8tBCTGUxqQNZ4W8qxDG38YPeaaab4EAz4ldajsftraTzpSpKcSkg+4lQCkm18wsN4hXHUVnlg5xV1K45Y1N2cSbEYJGkQmNRyP6T31Tf9NCyMl7WAubnUCa9OG0HGx/jYHEN8/Zh0f1NFVqbhdoYVSvcLIXwEIV0IIBpdpR3GdVPZHmaOzyykkCRBiYBOu4693A1VN7KWYMHhoZr3E8cunPzqMx+Ub9/HU661M8kVmT4PE07MXNkqtpbX7DWk9shaRJQbxuJO4yfXGva86NMiahLLf5E95NF1WDp2PE3dkLsQFc7b/ConcPHuxBt18K9tOFb/IOd1Hhumq9zYrGbOGUBUWVC5HQzYVfW7lZTxv+yuEWSR3fpSGCd3J8vtXs6NnoFsiTvE5z9b1x3DiPhQO5Q521PhReY9gemeSI2M9BtMiQQDpYaEer1KNhGAYXcDdXqgQubFGXheRxtTvYq/Ki3M9frQ9ZhZEEYRxxSRnSlKt4SoqT0nKkzYVKnPMyoiBIIjz3frXFdkklOUv4oiZ/eXvP48uYi+k07C9kGmveGIxP+p7MPAi50oWl3ImSYd5ZJzIAE2JvOu4SRVe5iFKWc2UggZSgQmxUFAmZKgAk9+6KtzsxMWcXrqSJ+XdpQ+N2MlaMucyB7sHQ7vXWhlTzxswozyyuUe1tt4fChKsQpQSTCUoGZav5QbcLnjRWzMdhcYCcMtYWBJadACyN+Uix6V552twjruMwzK1CcpGbgMxzKjiEgnup/s0Nf4mHSpp1pQynMVEwAoByTGZQNsoAm0XkDS8Ppulru+S6uKnGppsb5bZ3GDUze18W3+R0cyQfOf8AyoXD7RS+hLqbBYzQN06juMipA5XIjKdJ6HRcFUV2g1HbQJ/fMOo5xmT4pkedH4TtLhHvgeR41SBYoTF7MZd+NtKjxi/iL1rhjmvV/f7+pmlhFwbUZVCUkHoZ+VQPYVKhBAI53rAL7OZbsYh5o8lZh/vn505OK2qz8Lrb6eCxlV4nNWqOJpz5X30/j/0RKhOPBr3Nkt7kDuEfKuJZ3ka/IEx9++sr/fzENf8AcYJY/iR7w8QT8qsNn9vMC4APaFB0hQj9fKmZFul8fwDnezL0BPMef2p6RHwuAd5T87VHh8W07+7cQroRPhrTltVVywgYh5I/MOMSPEU3/qAPxI8KEyEXBI6WrpxK95Cv5gD56+dWqrRWRPgLDjatFR1/Wkpo7iDQJeSdUR/KfoZ+dcSU/hcjkoR5iRTY4qSAeHiwlbihqDUYx5G+l7RwCYzDiL/KoVvJV8SadHFr/khTwr4YLtPCYbEfv2GnDxUkZv6tfOszjewGBXdBdZ/kXI8Fg/OtM7hAfhVHI3qvxLTiN0jiL1ojWhLZiJUZx3RDsDsjg8MrMVuuyIyuKBR1yBIvzrTocCRDTq0D8tlJ8DfwIrIHHV0bQPGm2FGzRtrFN6FLg5GD/SuR/upP9psO77mMw6FT/wCogeWcQT0NY9O0yN9S/wDVJEG4O41WVEuaxvYuAcuw65h1HchwpH9C8yD3Cnu7Exbf7t5p4bkvILSv/cblP+ysItLerZU0f4D7v9BlPkKkw/aXG4bQ+1R/D9W128DS3QixiqyXJqsRiXWv3+GW2B+IJ9qjrnbnKOakprjONacSFJKVD8ycpH9VxQmyP2nYdZhw+yVynzQq47iavi1g8VDuRtZt/itHKrjClJg/6VeFZ54fsNjX7gSRN0gffwtTFIUJJTeLxr599EubDWLsvIVckpcBTP8ArRYf0Gh1bPcbEuthP8QhY/qAsP5gKzTpuI+NRSOEjhbqflTFkHT11EimqJ3FBG8kX5butQqCgfhB5z8zHq1BcYggHik9RaOO/Wo3SkGCVeE1ComAcsbjEfSKhWg2gK/qJ+QqXLsa8rB3GkVDQCKGIFLMNKRcvKRvqSN31+lQFG8KgxG75RXXrn4jULq0zGanxnoVkM72i2YleLwy5AKk4hJO6fYLM8rZqzDWHZfDiGnFJW0jOc/4kpVKQlxPunUhMxu51sNt49DS8M/P7jENqV/IrMys9AFz3VS4/FuN4heGVlAlxaikZcxkIQVcSCu26yTrJrfh9Y3Mld2lqZrZO3FYcOM+zK/ZuGEgwQgzMcYMf11d4LtbhlmFL9mrgsR56V57j8csYlxyZWFqk8ToqeRvVxhdps4j3VIk8xcdCKyYnCQbzZXryjZhcTJxy5kmuH/k9EaxAUJSQRxBkVKHK88TsnL72HeW2eEyPXWiG9t45j942l5P5k6+Q+lc+WCv6JX9nozd5hx/Mi17rVG9C6eFVkMD20w67LKm1bwsW8R9av8AD4xKxKFBQ4gzWWph6lP1RsOhUpz9LuGuaHpVdtXZLDiVFbSVEAmwvpoIopTljQHaDHobahZAStQQSTAggk3HIVKGfOlEqrGKg3I8tKnWTBztq/KZT5HWvVux72IVh2ypSlLVcDW262lUbZStIAV7hy2VDrfvKAAEjWBHwHXWo+2HbRzCE4XBn2agIccAEp/gRw5muxXcq7jTirPl+yOXBKinNu6PTW8LiIlSUd5g+UiktJGqfC/2PlXgacdiz/iOYt9M3EurzHnE2q0wHbjFswBiVOD8rqc48fi86N4GaX0y+RPmot6o9gLqDbMJ4Gx8DXFtVlth9tcNjIbdAbdNhf3VH+FRgg8j4mrLENLaNlEDcR9edc6rKdKWWaNtJRqK8WWJSQZBIPKkcWr8QCuog+IquTtBY1g9R9qkG0AdUkdKBVuwx0pchmds7yk87jxF/KnEKAnUcdR4ihAtKtCPlXUOKQfdNjqNxo1W7gZTmJYbX8aYPHTzqrxGwyDKDmH5SYJ5BVWqn+VQKfA0935eFaKeLlDZip4eMt0Z/aCgmIacbVvzRHcQpVDIWo6AnoDWmVjhvUnvinjEwMwjKNdAB36eNa4+IX0y6mZ4Lm+hn28K8dEKohOznuAHU1PiO1OESJOJb6AlR8Eg1U4n9oGDT8PtV/yogeKiPlR9fES2iD0aK3kEYzsz7X48k8Yv413YPZo4R5LzbygRqBoob0qG8VR4n9pKf8vDk81rA8gn61V4j9oWKV8CWkDknMf9xI8qu2Jlu0ir4eOybPdmMekjMmw1M/h4yeHOsjt39p6G1hjBj+0PKOUGYaBNrq/F3WtrXj20+0mLfTkdfWpB1SISk9UpAB761H7J9npXiXXVRLaQEg8Vkib8knxpvTyxzS1F51J5YqxvcLj1FIK1ErPxqQAEk3JypGiRupK2hlMZ1xN5k8bb6uVNA2qL+ypO8+X2vWJxV7s2p2RWqfUq6lGORFt/IjdRCGhAlZ7l/cUSrAJM/YX8qFVskE2VHQAVWVdyXfY1BaO+fXShcUtKASr5/rU4yb0jwoF5SDNgBWKDdxqRWqxyTvA4XI486AxWIvZSfH7xPjR7qkzv60HjHxW6PsA9tSlxpC0LSpSYWCkgzwg7qp8X22W1hjh3mUuPJAS2+SYKRZCimPeUBAmbwJBitI+sZf1ms5j8MHCSU5ut600G02ZsRFNLuedqc4mTSbQTfStY7sdO5IoZezAOlasxkUe4AztF1u4WFDnfxOvnVthO0qfxgp56jxF/Kq9zA0C/hCKVKnCfqRojWnT9D+xryvDvj3ghXO0jvGhoRfZ1IOZh1baupjxF6yfvJMiQeIsfEUdhdtuo35hzsft4g0ry04/ly+zGrF05fmw+6NCMftFgXh5I36nxEH51V9pu0JxKW0lstlBJUDvJAAjfx1ozC9pUmyhHW3np4kVYKxDDwAcCTOmYRPQ7+6aTbpzU509Vyh9lVhlp1d+GVHYJmcUFbkDMRuJ/DPnVViFy848u/vWB0Uoib8hr4VuNi4VlgqKARm5zFYtvBl7ENsCxWtKTyzKgnuHyptCoqlaUltZCMRQdKhGL3uH7L2SHEjEYpSsip9mhJhbsfEQfwtjQq8KtMbj2cOUBOEYhYGUhtLkzGrjhJUdKm7R4UupV7BI9w5EIBuhpMoSQOBAJ7zVfsPEn/tXECRdvMJCbSBJ4EzyuN1bDCLHqwa1rbdYDUHKHWBljmpqSlQ6R1rZdldoLtgsSsLKkk4V8aPJTqkzfOkag3jXQE4jGbOKnVKNk5vevcb9PLrVjgcdneVhlf4aiUqZV/wCm6n4FDyB4gnlSMRQVaGV/6GUarpyujaLEGKbTWsd7dtL8ZSqQ4n8q0nKseINMLteXcWm090enjacVJcjl1X4l/No4oIyiSlJMEzFxrb0a7th1QYdKASvIrLFzMbh51U9ke2LeDYQFFEgkFKkFf5Rcc4kHTmIrp+H4dTvN8HPx1bp2guTMdrcKpvEFAUsgpB95RN9+pt0qgKauu022E4t9T10lRJmOJndVSpoi+o4i48a7cVZHEk7sfgsMFk5rISJWrgOXM6CrV9C38Ot4kJZa91toH4dMpIPxT719ZBNBYgFOFbA0WtZUeaYSkHuMxzpYvHo9kltoKSCE+0zEGVJ3CB8M3vJqyXK5RrlPaaU4YQlSjwSCT4CrBHZzFxJYWgcXIbHi4RVglXXatEbE0zYhgE/hSouq7g0lUnvrUbE/Z6txQUpLpRr76QylXIkqLgHPJVkM12e7OvYxUIGVAICnFD3RO4fmV/CK947K9gmMM2EkKJMEmTnUqCJUQYgAmE3F7zXezGw28Mn2zy0SiQ2lAIbaB0DaNVOEfiiTcCLzLtDbRdlORSW/yxdf85nQ/lFuJOgVUnGK+r4GU4Sm/p+RmIQ0kq9+EgwFg5Uq04GDe1uBqs2WtxbYUVAKlVinQZiBoRIjfN6W0sSlSCnIvccwgZYNjfSKdg8SVIBVkJjVJkA8zPSud7o6SWmoVKhrlPcR9TTVLVw8/wBKRcO9O+9z8oNJToG8jvH2qmy0gv8AtJi415+r60JiHoH61KZ30FiYmP8AnyoKcFcKUrIgJ8/XrpQbyb+tKKMxpH13brRQ69dPX0rYlqZZPQHWi3j9aEWz3Ue4gwbE/wDNDqbPn+vhTIi5MrlYfn61oZTE1bFuxt69TUSmPrRgFK7hvXjQzuFndV46zw9d/rShVtX+X0q0UZ1/Bcqr38DWoW3UDuGtwokwWjJuYdQqNDqk6Ep4xoeo31pHsLyoB/BUVwMoPhtrLTvtyMeV0+AFWfYMztLCZjq4BJ4lKkjzIqnewcU3CPqZcQ4n4kKSpPVKgoeYqrLW25eaWib2NzjNnoQ8045iENBFim+dcGCmNwMEb6tcDtPAvrDSUuKWqRYzoRrmSkkXGgnhMVY9q8EjHse0aH71Ht2ec/vW/wCZKyQRzRVN+z3BtYV4OLyLxWX/AA0EyUkkJkDkCVqVyyp/EaiTtqU2rmo29ikJSV4fB+xcBLbiliyZF1JCrBVozETHca81G2ykZShtESkKIKljd8StK0my+0SnH8U0bh7MpBm+YEkGTImDJtcJVVHjMIxinggZkPBQBSBIX7yUkRNiTAE1aXcG/Ytdm7QCcdicObBZS6kfxKbQpY7809xq69kSCQCY1i8da857RbRy7RddbMhtwAcw2lLZ7jlPjXoGDxos4jKZTbMJEGDuIvXFx1BKqp7J/ud7w+vKVJxWrX7FrhTgITmxLjLoifaJ9wnfCkiI6qmhMV2dDkqQ1s7Ek6ELSg9TMk0DiHCtSlKvMQJJiABAk6b450E7gGjqhJ7hVRr0Yv0/dXQc8JVqK7n9nZ2CF9h8YdNn7Pj/APofoaj/ALh44G2zsH/pcV/96G/6Wz+QDpThs5m/unS0KUI52NP85R/6v5/kQ/Da3El8fwXGI7IYxtvI3s/DrSsArSVAJC4/ITqNMwVJ5UEew+0jHssJgMNGpIDh65loWRVc7sw/5bpT/Opy3TKryqNGAQkH2z63DwEhPT3lU6OLoxj9N/01ESwFdytK36ls52XWj/vdtpbG9tlcdwAI/wDChU7N2G1+HE4tfEhdz1Ps0nzqofx+FZ0QgdbnwFAOdolLOVlCieQj5CaYsRVn6YfIEsLRp+ufwbVjtKhgRhNntsg/iWoJPeECT/VQL3bbFOKyIcRm3hpACUj+JS8xnkKybiFn9+7l4tt3V0Ufw957qstlvtJASEZB8+p18KYnNayf2Ql9J6QX3ZqdkY90uhS1OObiVKJidYkwnuitP/aU8TbnWRwmMEQCIvppv4aaUe28d8+X39RWOv8AXK9rGyhHJGydy+LqPzHj6tULzLKrmCeJGnlVWX73nrTw51+/lS1D3GOXsGltIMharbiZHnenJn8yf6f/ANUERPX15VGUfxef60eX3BzexoMkzuoNyDep33bQZPT0YoRwAg8N033edXTVgJ6jA5G6etqaXJ009c6jdatawHDd3UzLBmK0JLcztu4nyOVDhAPrrRDiNNLmflQ8Eb7/AK0UdgJbjVpHGo1kGpS36nlzpjg8PXCjAB3ECoC2PXCjFNx09d5qFaIIA4T64VCAKmbeo8qhcb5wfV6slJgcel5qNxI3/r6tVkKlxmT9uvnQzuGmdO7wqzffbH407pk+vQqMOIPwqmdwBPyFWCykdwtVuLwsjnWldUkcSd1uXOgXGFOAykIH+6N+ulWmC0E9iO1CWUqwuJzFhSswUm68OuMpcQn8SSLKRvHnrH+yozoxbJC03KXWjmaXKSnXVBvoqI0k153jNjfksQbHf+vdUeA2vi8GrM2pxsnVTainN/NlsrvFGmA0bHZX7PcQXkuofbBCs0AFR1MiBa4trvqbtMtrZanSCg412YSg5vZSI9q4SLKucqOJmsvjP2ibQcQUqxeIINiAsJ80JB86yy1lRJ43PM7yeJq2rlLQSb1puze3glHslqjKfdJ4Hd3Vmcp0rnsqVWpRqxyyH4etKjLNE3mN2woJzNBK+IzX7uPSqxvtbJ95uO/7isr7Ku5KzxwVJKzVzXPxGs3eLsbD+8re/Mk8CPtUbvaRA0JPdWXQrcRI8x0P00qVLSdcwjoZ8KnkqRPxKtbgs8R2kWbIEdfsKDnEPSZOXeZypHU1xLgHwoHVV/LTxmuOKWr4iVRpy6DQd1OhShHZGapiKtT1SHN4ZlHxKLh/Kiye9Z+gNEqxaiIQA2n8qLT1VqflQqUjnRCAONMuKsJtEUYzyueVRto4/Opmk3kQelCwkGsOEGRIq1w20FfikjiNaqkggj6UQhMDd65UuUU9xkZuOxoGMQk/ivwI8OXhRiTM7vX61l1OxGl9bx5GpWdsJBvPDj13z3xSpUuw6NfuaTNABufGpFPjh4zVQztVvg4J/hmekUQMa0QPjVzygd0KM0txaGqaexq30KqEtkXJ147uno0qVLgwpIr3VkmxGn61wKNtIvu6cT6iuUq1oyPUa4TPG0/IVEpIP3ieFKlRoCW5CBEX+1OXCQSSOcnpx3frXaVECQOYpu8GZ4ST3RbT5bqi9sszDcc1Qndyk/Wu0qog1WHdVMrAHBG/lJ/SkME3rCVHiqCedzpfeYpUqshxaSmNPlBmoMYSkEjQbqVKqIAYdu07zFOcRGm+OfzpUqIoaG7yTu9WpqmRwGnr57uVKlUIBv7LST7yR4efrhvoVeykcLjh69RSpVLlWIV7Jj/ih3MBFKlUTJYgOG5U1WHilSqyWGhinBilSqXJYd7MCpAjkaVKoQlQ2dwPy404ME8PXrfSpVVwrBP9iCSJGnnxqVWFToYJt9N4pUqohIjAjiY6/Lw5UzEYZUWUVRGp66E3mlSqEHYVltRgg5hqkmDw7x5VYt4dKdAAOfWlSqFEqbevnU2UHcjvA+tdpVRD/9k=" alt="Retro Car 1" class="image">
+            <h3>1969 Ford Mustang</h3>
+        </div>
+        <div class="car-card" tabindex="0">
+            <img src="https://s1.cdn.autoevolution.com/images/news/1957-chevrolet-bel-air-is-big-time-custom-work-151995_1.jpg" alt="Retro Car 2" class="image">
+            <h3>1957 Chevrolet Bel Air</h3>
+        </div>
+        <!-- Add more car cards as needed -->
+    </section>
+    
+    <section id="gallery" class="gallery-section">
+        <h2>Gallery</h2>
+        <div class="image-container">
+            <!-- Images of retro cars with hover effects -->
+            <div class="gallery-image" tabindex="0">
+                <img src="https://i0.wp.com/www.retroclassiccar.com/wp-content/uploads/2019/08/retro-classic-car-north-yorkshire.jpg?resize=1500%2C648&ssl=1" alt="Image 1" class="image">
+                <span class="hover-text">Classic Model A</span>
+            </div>
+            <div class="gallery-image" tabindex="0">
+                <img src="https://i.redd.it/u8appa4hoie21.png" alt="Image 2" class="image">
+                <span class="hover-text">Vintage Roadster</span>
+            </div>
+        </div>
+    </section>
+    
+    <section id="location" class="location-section">
+        <h2>Visit Us</h2>
+        <div class="map-container">
+            <!-- Update the `src` with the Google Maps embed link for the provided address -->
+            <iframe src="https://maps.google.com/maps?q=Peetri%208%20Tartu%2050303&t=&z=13&ie=UTF8&iwloc=&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    
+    
+    <footer class="main-footer">
+        <p>© 2023 Retro Wheels. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
