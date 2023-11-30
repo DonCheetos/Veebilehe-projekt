@@ -27,4 +27,26 @@ section {
     padding: 20px;
 }
 
+iframe {
+    width: 750px;
+    height: 550px;
+}
+
+#Auto_Toyota {
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#Toyota_Chaser_JZX100_Pilt {
+    max-width: 100%;
+    height: auto;
+}
+
+#Toyota_Chaser_JZX100_Pealkiri {
+    text-align: center;
+}
 
