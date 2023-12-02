@@ -12,7 +12,7 @@
     <header class="main-header">
         <nav class="main-nav">
             <ul>
-                <li><a href="Jaapan_kõrvalleht.html">Home</a></li>
+                <li><a href="Veebilehe-projekt/Jaapan_kõrvalleht.html">Home</a></li>
                 <li><a href="european.html">European Cars</a></li>
                 <li><a href="american.html">American Cars</a></li>
                 <li><a href="japanese.html">Japanese Cars</a></li>
