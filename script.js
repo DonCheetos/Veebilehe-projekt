@@ -1,4 +1,4 @@
-// Smooth scroll for anchor links
+// Example: Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -8,45 +8,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Sticky header
-var header = document.querySelector('.main-header');
-var sticky = header.offsetTop;
-
-function stickyHeader() {
-    if (window.pageYOffset > sticky) {
-        header.classList.add('sticky');
-    } else {
-        header.classList.remove('sticky');
-    }
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
 }
 
-window.onscroll = function() {
-    stickyHeader();
-};
-
-// Contact form submission (example of a more advanced feature)
-document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // You would typically implement an AJAX request here to submit the form without reloading the page
-    // For example:
-    /*
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'your-server-endpoint', true);
-    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-    xhr.onload = function() {
-        if (this.status === 200) {
-            console.log('Form submitted successfully!');
-            // handle successful form submission (e.g., display a thank you message)
-        } else {
-            console.error('An error occurred!');
-            // handle errors (e.g., display an error message)
+function runOnScroll() {
+    document.querySelectorAll('.culture-image').forEach(img => {
+        if (isInViewport(img)) {
+            img.classList.add('fade-in');
         }
-    };
-    xhr.send('name=' + encodeURIComponent(document.getElementById('name').value) +
-             '&email=' + encodeURIComponent(document.getElementById('email').value) +
-             '&message=' + encodeURIComponent(document.getElementById('message').value));
-    */
+    });
+}
 
-    console.log('Form submitted!'); // Placeholder for demonstration
-});
+window.addEventListener('scroll', runOnScroll);
