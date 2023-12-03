@@ -8,75 +8,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"><head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="script.js"></script>
 </head>
 <body>
-    <div id="nav-placeholder"></div>
+    <div id="menu"></div>
     <script>
         $.get("menu.html", function(data){
-            $("#nav-placeholder").replaceWith(data);
+            $("#menu").replaceWith(data); //laeb divi sisu valisest failist (menu.html)
         });
     </script> 
-
-    <section id="car-history">
-        <video autoplay muted loop id="carHistoryVideo">
-            <source src="img/background.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-        </video>
-        <div class="video-overlay">
-            <h2>A Journey Through Car History</h2>
-            <p>Explore the evolution and milestones of the automotive industry.</p>
-        </div>
-    </section>
-    <!-- European Cars Section -->
-    <section class="culture-section" id="european-cars">
-        <img src="img/european.jpeg" alt="European Cars" class="culture-image">
-        <div class="culture-info">
-            <h2>European Cars</h2>
-            <p>Elegance and performance define European car culture, with a legacy of iconic designs and engineering marvels.</p>
-            <button class="learn-more-btn" onclick="redirectToEuropeanCars()">Learn More</button>
-        </div>
-    </section>
     
+    <div id="content"></div>
+
     <script>
-        function redirectToEuropeanCars() {
-            window.location.href="europe/"; // Redirect to the European Cars section
+        /*
+         * // votab query parameertist vaartuse 
+         */
+        const urlParams = new URLSearchParams(window.location.search); 
+        let page = urlParams.get('page');
+
+        // kui page pole query parameetris kirjas, siis default vaartus on content.html, vastasel
+        if(page == null) {
+            pageUrl = "content.html"
+        } else {
+
+            // kui on defineeritud, siis loe lehekulje sisu alamkataloogi (page) index.html failist
+            pageUrl = page + "/index.html"
         }
-    </script>
-
-    <!-- American Cars Section -->
-    <section class="culture-section" id="american-cars">
-        <img src="img/american2.jpeg" alt="American Cars" class="culture-image">
-        <div class="culture-info">
-            <h2>American Cars</h2>
-            <p>Known for their muscle and roar, American cars encapsulate the spirit of freedom and bold innovation.</p>
-            <button class="learn-more-btn2">Learn More</button>
-        </div>
-    </section>
-
-    <!-- Japanese Cars Section -->
-    <section class="culture-section" id="japanese-cars">
-        <img src="img/japanese.avif" alt="Japanese Cars" class="culture-image">
-        <div class="culture-info">
-            <h2>Japanese Cars</h2>
-            <p>Japanese car culture blends cutting-edge technology with reliability, making these cars beloved worldwide.</p>
-            <button class="learn-more-btn">Learn More</button>
-        </div>
-    </section>
-
-    <footer class="main-footer">
-        <div class="footer-menu">
-            <h3>Contact Us</h3>
-            <p><strong>Address:</strong> 123 Car Street, Auto City, CA</p>
-            <p><strong>Phone:</strong> (555) 123-4567</p>
-            <p><strong>Email:</strong> <a href="mailto:contact@carcultures.com">contact@carcultures.com</a></p>
-            <ul class="footer-links">
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="privacy.html">Privacy Policy</a></li>
-            </ul>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+        $.get(pageUrl, function(data){
+            $("#content").replaceWith(data);
+        });
+    </script> 
 </body>
 </html>
