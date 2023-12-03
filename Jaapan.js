@@ -1,20 +1,18 @@
-var myVideo = document.getElementById("video1"); 
+document.addEventListener("DOMContentLoaded", function () {
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
 
-function playPause() { 
-    if (myVideo.paused) 
-      myVideo.play(); 
-    else 
-      myVideo.pause(); 
-  } 
-  
-  function makeBig() { 
-      myVideo.width = 560; 
-  } 
-  
-  function makeSmall() { 
-      myVideo.width = 320; 
-  } 
-  
-  function makeNormal() { 
-      myVideo.width = 420; 
-  } 
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Tagasi peallehele nupp
+    const backButton = document.getElementById('back-to-main');
+    backButton.addEventListener('click', function () {
+        window.location.href = "main.html"; //Viib tagasi pealehele
+    });
+});
