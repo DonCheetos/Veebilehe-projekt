@@ -1,0 +1,61 @@
+    <section id="car-history">
+        <video autoplay muted loop id="carHistoryVideo">
+            <source src="img/background.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="video-overlay">
+            <h2>A Journey Through Car History</h2>
+            <p>Explore the evolution and milestones of the automotive industry.</p>
+        </div>
+    </section>
+    <!-- European Cars Section -->
+    <section class="culture-section" id="european-cars">
+        <img src="img/european.jpeg" alt="European Cars" class="culture-image">
+        <div class="culture-info">
+            <h2>European Cars</h2>
+            <p>Elegance and performance define European car culture, with a legacy of iconic designs and engineering marvels.</p>
+            <button class="learn-more-btn" onclick="redirectTo('europe')">Learn More</button>
+        </div>
+    </section>
+    
+    <script>
+        function redirectTo(page) {
+            window.location.href = '?page=' + page; // Replace with your desired URL
+        }
+    </script>
+
+    <!-- American Cars Section -->
+    <section class="culture-section" id="american-cars">
+        <img src="img/american2.jpeg" alt="American Cars" class="culture-image">
+        <div class="culture-info">
+            <h2>American Cars</h2>
+            <p>Known for their muscle and roar, American cars encapsulate the spirit of freedom and bold innovation.</p>
+            <button class="learn-more-btn" onclick="redirectTo('america')">Learn More</button>
+
+        </div>
+    </section>
+
+    <!-- Japanese Cars Section -->
+    <section class="culture-section" id="japanese-cars">
+        <img src="img/japanese.avif" alt="Japanese Cars" class="culture-image">
+        <div class="culture-info">
+            <h2>Japanese Cars</h2>
+            <p>Japanese car culture blends cutting-edge technology with reliability, making these cars beloved worldwide.</p>
+            <button class="learn-more-btn" onclick="redirectTo('japan')">Learn More</button>
+
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-menu">
+            <h3>Contact Us</h3>
+            <p><strong>Address:</strong> 123 Car Street, Auto City, CA</p>
+            <p><strong>Phone:</strong> (555) 123-4567</p>
+            <p><strong>Email:</strong> <a href="mailto:contact@carcultures.com">contact@carcultures.com</a></p>
+            <ul class="footer-links">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
