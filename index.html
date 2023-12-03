@@ -6,19 +6,16 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"><head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
 </head>
 <body>
-    <header class="main-header">
-        <nav class="main-nav">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="europe/">European Cars</a></li>
-                <li><a href="america/">American Cars</a></li>
-                <li><a href="japan/">Japanese Cars</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="nav-placeholder"></div>
+    <script>
+        $.get("menu.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+        });
+    </script> 
 
     <section id="car-history">
         <video autoplay muted loop id="carHistoryVideo">
@@ -30,15 +27,21 @@
             <p>Explore the evolution and milestones of the automotive industry.</p>
         </div>
     </section>
-
+    <!-- European Cars Section -->
     <section class="culture-section" id="european-cars">
         <img src="img/european.jpeg" alt="European Cars" class="culture-image">
         <div class="culture-info">
             <h2>European Cars</h2>
             <p>Elegance and performance define European car culture, with a legacy of iconic designs and engineering marvels.</p>
-            <button class="learn-more-btn">Learn More</button>
+            <button class="learn-more-btn" onclick="redirectToEuropeanCars()">Learn More</button>
         </div>
     </section>
+    
+    <script>
+        function redirectToEuropeanCars() {
+            window.location.href="europe/"; // Redirect to the European Cars section
+        }
+    </script>
 
     <!-- American Cars Section -->
     <section class="culture-section" id="american-cars">
