@@ -97,22 +97,3 @@ header h1 {
     border-radius: 50px; /* Teeb ääred ümaramaks*/
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-/* Nupu stiil */
-button {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    font-size: 1em;
-    background-color: #ff4500;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
-
-/* Nupu hõljumisefekt */
-button:hover {
-    background-color: #cc3700;
-}
