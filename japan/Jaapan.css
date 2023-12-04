@@ -99,7 +99,7 @@ header h1 {
 }
 
 /* Nupu stiil */
-#nupp {
+button {
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
@@ -113,6 +113,6 @@ header h1 {
 }
 
 /* Nupu hõljumisefekt */
-#nupp:hover {
+button:hover {
     background-color: #cc3700;
 }
