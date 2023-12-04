@@ -1,0 +1,99 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: rgba(0, 0, 0, .6); /* Tasuta värv */
+    background-image: url('https://github.com/DonCheetos/Veebilehe-projekt/blob/main/img/Landscape_backround.jpg?raw=true'); /* Tausta pilt*/
+    background-blend-mode: multiply; /* Kui veebileht muutub suuremaks taaskasutab tausta*/
+    background-size: cover;
+    color: #fff; /* Teksti värv */
+    margin: 0;
+    position: relative; /*Relatiivse paigutuseks*/
+}
+
+/* Loob pool läbipaistva tausta, et oleks parem lugeda */
+body::before {
+    content: ''; /* Parem teksti lugeda*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3); /* Pool läbipaistev must taust */
+    z-index: -1; /* Asetab kattekihi sisu taha */
+}
+
+/* Header stiil */
+header {
+    background-color: rgba(0, 0, 0, .5);
+    background-image: url(https://github.com/DonCheetos/Veebilehe-projekt/blob/main/img/uusjdm.jpg?raw=true);
+    background-blend-mode: multiply;
+    color: white;
+    text-align: left;
+    padding: 1em 0;
+    padding-bottom: 70px;
+    background-position: 40% 27%;
+}
+
+header h1 {
+    font-size: 3em;
+    text-align: left;
+    margin-left: 115px;
+}
+
+/* Content stiil */
+#content {
+    padding: 20px;
+    text-align: justify;
+    margin-top: 50px;
+    margin-right: 90px;
+    margin-left: 90px;
+}
+
+/* Heading stiil */
+#content h2 {
+    color: #fff; /* Heading värv */
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Paragraph stiil */
+#content p {
+    color: #fff; /* Paragraph teksti värv */
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+/* Container stiil meedia elementide jaoks */
+#media-container,
+#media-container_2 {
+    display: flex; /* Pilt ja video oleks kõrvuti*/
+    margin-top: 20px;
+}
+
+/* Meedia elementide stiil */
+#image,
+#video,
+#image_2,
+#video_2 {
+    flex: 1; /* Venitab suuremaks*/
+    margin-right: 10px;
+}
+
+/* Pildi stiil */
+#image img,
+#image_2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 50px; /* Teeb ääred ümaramaks*/
+}
+
+/* Video stiil */
+#video iframe,
+#video_2 iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 50px; /* Teeb ääred ümaramaks*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
