@@ -2,8 +2,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    background-color: rgba(0, 0, 0, .6); /* Tasuta värv */
-    background-image: url('https://github.com/DonCheetos/Veebilehe-projekt/blob/main/img/Landscape_backround.jpg?raw=true'); /* Tausta pilt*/
+    background-color: rgba(0, 0, 0, .9); /* Tasuta värv */
     background-blend-mode: multiply; /* Kui veebileht muutub suuremaks taaskasutab tausta*/
     background-size: cover;
     color: #fff; /* Teksti värv */
